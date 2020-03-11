@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
  
  let collectionBtnNouvelle = document.querySelectorAll('button');
+
     console.log(collectionBtnNouvelle.length);
 
 
@@ -18,7 +19,8 @@ function Ajax(evt) {
     //  instructions ici
     let maRequete = new XMLHttpRequest();
     console.log(maRequete)
-    maRequete.open('GET', 'http://localhost/2020-veille/wp-json/wp/v2/posts'); // modifier ici
+    //////////////////////////////////CHANGER SELON LE NOM DU DOSSIER DE TRAVAIL
+    maRequete.open('GET', 'http://localhost/wordpress/wp-json/wp/v2/posts'); // modifier ici
     maRequete.onload = function () {
         console.log(maRequete)
         if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -47,5 +49,9 @@ function creationHTML(postsData){
         monHtmlString += '<h2>' + elm.title.rendered + '</h2>'
         monHtmlString += elm.content.rendered;
     }
+
+    
+let contenuNouvelle = document.getElementById('contenuNouv');
+
     contenuNouvelle.innerHTML = monHtmlString; 
 }

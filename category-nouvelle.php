@@ -38,6 +38,7 @@ while ($query1->have_posts()){
     echo "<p>" . get_the_excerpt() . "</p></div>";
     echo "</section>";
     echo "<button type='button' class='bouton'>Lire plus </button>";
+    echo "<section id='contenuNouv'>";
 }
 
 
