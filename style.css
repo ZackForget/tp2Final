@@ -21,59 +21,34 @@
 }
 
 
-h2{
-    text-decoration-line: underline;
 
+
+
+#nouvelleFlex{
+     display: flex;
+     height: 250px;
+     justify-content: start;
+     flex-direction: row;
+     margin-bottom: 25px;
 }
 
 
 p{
-    max-width: 90%;
+    max-width: 75%;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
 }
 
-
-#confDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-#confDiv img{
-    padding-left: 10px;
-}
-
-#confDesc{
-    padding-left: 10px;
-}
-
-#nouvDivFull{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#nouvDiv{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#nouvDiv h2{
-    font-size: 18px;
-}
-
-
-#grilleevenement{
+#grilleAteliers{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(31, 1fr); 
-    border: 1px solid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr); 
 }
-#grilleevenement p{
-    border: 1px solid black;
+
+#grilleAteliers div{
+    border: solid 1px black;
 }
 
 
+@import 'sass/style.scss';
