@@ -1,0 +1,54 @@
+/*
+ Theme Name:   Underscores Child
+ Theme URI:    http://example.com/Underscores/
+ Description:  Underscores Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     underscores
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  underscores-child
+*/
+
+.site-branding{
+    display: none;
+}
+
+#menu-item-33{
+    display: none;
+}
+
+
+
+
+
+#nouvelleFlex{
+     display: flex;
+     height: 250px;
+     justify-content: start;
+     flex-direction: row;
+     margin-bottom: 25px;
+}
+
+
+p{
+    max-width: 75%;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+
+#grilleAteliers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr); 
+}
+
+#grilleAteliers div{
+    border: solid 1px black;
+}
+
+
+@import 'sass/style.scss';
