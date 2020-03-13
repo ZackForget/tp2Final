@@ -48,12 +48,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-//@import "normalize";
+@import "normalize";
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-//@import "typography/typography";
+@import "typography/typography";
 
 /*--------------------------------------------------------------
 # Elements
@@ -104,3 +104,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 //@import "media/media";
+
+/*--------------------------------------------------------------
+# Fonctionnalitées SASS
+--------------------------------------------------------------*/
+@import "fonctionnalités/fonctionnalites";
+
+
+@import "layout/layout";
+
+
+
