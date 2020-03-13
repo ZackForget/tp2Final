@@ -67,6 +67,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   display: block;
   float: left;
   width: 100%;
+  height: 10%;
 }
 
 .main-navigation ul {
@@ -98,6 +99,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .main-navigation ul ul a {
   width: 200px;
+}
+
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+  color: red;
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {
+  color: red;
 }
 
 .main-navigation ul li:hover > ul,
@@ -152,8 +163,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   width: 50%;
 }
 
-
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -168,6 +177,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Menus
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Infinite scroll
