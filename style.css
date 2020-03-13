@@ -21,9 +21,7 @@
 }
 
 
-.imgAccueil{
-    width: 100vw;
-}
+
 
 
 #nouvelleFlex{
@@ -32,11 +30,6 @@
      justify-content: start;
      flex-direction: row;
      margin-bottom: 25px;
-}
-
-#nouvelleFlex img{
-    width: 50%;
-    height: 50%;
 }
 
 
@@ -57,3 +50,5 @@ p{
     border: solid 1px black;
 }
 
+
+@import 'sass/style.scss';

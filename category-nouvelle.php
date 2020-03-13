@@ -33,18 +33,19 @@ while ($query1->have_posts()){
     $query1->the_post();
     
     echo "<section id='nouvelleFlex'>"; 
-    echo "<div id='imgAccueil'> " . the_post_thumbnail('thumbnail') . "</div>";
+    the_post_thumbnail('thumbnail');
     echo "<div id='textFlex'><h2>" . get_the_title() . "</h2>";
     echo "<p>" . get_the_excerpt() . "</p></div>";
     echo "</section>";
     echo "<button type='button' class='bouton'>Lire plus </button>";
+    echo "<section id='contenuNouv'>";
 }
 
 
 ?>
     </main><!-- #main -->
 	</div><!-- #primary -->
-    
+ 
     
 
 <?php
