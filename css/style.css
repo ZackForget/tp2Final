@@ -1,24 +1,16 @@
 @charset "UTF-8";
-/*!
-Theme Name: Underscores
-Theme URI: http://underscores.me/
-Author: ZackForget
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: underscores
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Underscores is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+/*
+ Theme Name:   underscores Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  underscores Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     underscores
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  underscores-child
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -384,6 +376,10 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1 {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -542,4 +538,7 @@ template {
 /*--------------------------------------------------------------
 ## footer
 --------------------------------------------------------------*/
+a {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
