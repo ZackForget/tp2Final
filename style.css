@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /*
- Theme Name:   Underscores Child
- Theme URI:    http://example.com/twenty-fifteen-child/
- Description:  underscores Child Theme
+ Theme Name:   underscores Child 
+ Theme URI:    http://example.com/underscoreschild/
+ Description:  underscores child theme
  Author:       John Doe
  Author URI:   http://example.com
  Template:     underscores
@@ -9,7 +10,7 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  underscores-child
+ Text Domain:  underscore-child
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -375,6 +376,14 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1 {
+  text-align: center;
+}
+
+p {
+  color: lightcoral;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -533,4 +542,7 @@ template {
 /*--------------------------------------------------------------
 ## footer
 --------------------------------------------------------------*/
+a {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */

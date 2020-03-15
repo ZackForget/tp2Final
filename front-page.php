@@ -1,30 +1,22 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Underscores
- */
 
 //get_header();
+get_template_part('header');
 ?>
-
+<div id="primary" class="content-area">
+<main id="main" class="site-main">
 		<?php
 
 
 		while ( have_posts() ) :
 			the_post();
-		get_template_part( 'template-parts/content', 'page' );
+		//get_template_part( 'template-parts/content', 'page' );
            // echo get_the_title();
 
 
         endwhile; // End of the loop.
+        
+
         
         $args0 = array(
             "category_name" => "nouvelle",
