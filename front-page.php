@@ -10,7 +10,7 @@ get_template_part('header');
 
 		while ( have_posts() ) :
 			the_post();
-		//get_template_part( 'template-parts/content', 'page' );
+		get_template_part( 'template-parts/content', 'page' );
            // echo get_the_title();
 
 
@@ -29,20 +29,6 @@ get_template_part('header');
 
 
 
-
-        
-
-        $args1 = array(
-            "category_name" => "evenement",
-            "posts_per_page" => 3,
-            "orderby" => "date", 
-            "order" => "ASC"
-
-        );
-
-        $query1 = new WP_Query($args1);
-
-        
         //Affichage Nouvelles
         echo '<h1>' .category_description(get_category_by_slug('nouvelle')) . '</h1>';
        
@@ -57,6 +43,20 @@ get_template_part('header');
             the_post_thumbnail('thumbnail');
             
         }
+
+        
+
+        $args1 = array(
+            "category_name" => "evenement",
+            "posts_per_page" => 3,
+            "orderby" => "date", 
+            "order" => "ASC"
+
+        );
+
+        $query1 = new WP_Query($args1);
+
+        
 
 
 
@@ -84,49 +84,6 @@ get_template_part('header');
 
 
 
-
-
-// echo '<h2>' .category_description(get_category_by_slug('nouvelle')) . '</h2>';
-
-
-//         $args = array(
-//             "category_name" => "nouvelle",
-//             "posts_per_page" => 3,
-//             "orderby" => "date", 
-//             "order" => "DESC"
-
-//         );
-//         $query1 = new WP_Query($args);
-
-
-//         while ($query1->have_posts()){
-//             $query1->the_post();
-//             echo "<h2>" . get_the_title() . "</h2>";
-//             echo "<p>" . get_the_excerpt() . "</p>";
-//         }
-
-
-
-                
-// echo '<h2>' .category_description(get_category_by_slug('evenement')) . '</h2>';
-
-
-// $args2 = array(
-//     "category_name" => "evenement",
-//     "posts_per_page" => 3,
-//     "orderby" => "date", 
-//     "order" => "ASC",
-//     "nopaging" => true
-// );
-// $query2 = new WP_Query($args2);
-
-
-// while ($query2->have_posts()){
-//     $query2->the_post();
-//     echo "<h2>" . get_the_title() . "</h2>";
-//     echo "<p>" . get_the_excerpt() . "</p>";
-//     the_post_thumbnail('thumbnail');
-// }
 
 
 

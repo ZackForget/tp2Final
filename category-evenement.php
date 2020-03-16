@@ -30,13 +30,14 @@ echo '<div id="grilleevenement">';
 
     $gridArea = $jour . '/' . $mois . '/' . ($jour+1) . '/' . ($mois+1) ;
 
-echo '<p style="grid-area: '.$gridArea . '">' . 
-get_the_title() . ' - ' . $gridArea . ' - ' .get_the_date('j / m / Y')
-."</p>";
+echo '<div> <p style="grid-area: '.$gridArea . '">' . 
+get_the_title() . ' <br> ' .get_the_date('j / m / Y')
+."</p> </div>";
 
 endwhile;
+
 echo '</div>';
  
-
+get_template_part('description-evenement');
 
 ?>

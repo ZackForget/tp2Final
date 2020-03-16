@@ -1,0 +1,10 @@
+#grilleevenement{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr); 
+}
+
+#grilleevenement div{
+    border: solid 1px black;
+
+}
