@@ -51,6 +51,13 @@ get_template_part('header');
 
         wp_reset_postdata();
 
+
+
+
+
+
+
+
         $args = array(
             "category_name" => "evenements",
             "posts_per_page" => 3,
@@ -62,12 +69,10 @@ get_template_part('header');
         $query1 = new WP_Query($args);
 
 
-
-
-
 //Affichage des Evenement
-    echo "<h1>" .category_description(get_category_by_slug('evenements')) . "</h1>";
+    echo "<h1 id='titreEve'>" .category_description(get_category_by_slug('evenements')) . "</h1>";
 
+    
 
 
     
