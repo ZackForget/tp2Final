@@ -61,42 +61,28 @@ get_template_part('header');
 
         $query1 = new WP_Query($args);
 
-        
+
 
 
 
 //Affichage des Evenement
     echo "<h1>" .category_description(get_category_by_slug('evenements')) . "</h1>";
 
-    echo "<div id='containEve'>";
+
 
     
         while ($query1->have_posts()){
             $query1->the_post();
             
-                echo "<div id='eveDiv'>
-                    <section id='eveTitre'>
-                         <h2>" . get_the_title() . "</h2>";
-                    echo "<p>" . get_the_excerpt() . "</p></section>";
-                    //echo "<section='containImg'>";
-                    // the_post_thumbnail('thumbnail');
-            echo "</div>";
+                echo "<div id='containDiv'>
+                    <h2>" . get_the_title() . "</h2>";
+                        echo "<section  id='eveDiv'>";
+                            the_post_thumbnail('thumbnail');
+                            echo "<p>" . get_the_excerpt() . "</p> </section>";
+                   
+                echo "</div>";
        
         }
-        echo "</div>";
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

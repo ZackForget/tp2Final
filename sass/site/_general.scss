@@ -16,3 +16,20 @@ main{
     width: 30%;
     text-align: center;
 }
+
+
+#containDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //align-items: center;
+}
+
+#eveDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+#eveDiv img{
+    padding-right: 15px;
+}
