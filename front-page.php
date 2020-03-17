@@ -33,49 +33,54 @@ get_template_part('header');
         echo '<h1>' .category_description(get_category_by_slug('nouvelle')) . '</h1>';
        
 
+        echo "<div id=containNouv>";
+
         while ($query0->have_posts()){
             $query0->the_post();
 
-            echo "<div id=confDiv>";
-            echo "<section id=confDesc><h2>" . get_the_title();
-            echo "  -  ";
-            echo get_the_date() . "</h2>";
+            echo "<div id=nouvDiv>";
+            echo "<section id=nouvDesc><h2>" . get_the_title();
+            echo "  <br> ";
+            echo get_the_date() . "</h2> </section>";
             the_post_thumbnail('thumbnail');
+            echo "</div>";
             
         }
 
-        
+        echo "</div>";
 
-        $args1 = array(
-            "category_name" => "evenement",
+        wp_reset_postdata();
+
+        $args = array(
+            "category_name" => "evenements",
             "posts_per_page" => 3,
             "orderby" => "date", 
             "order" => "ASC"
 
         );
 
-        $query1 = new WP_Query($args1);
+        $query1 = new WP_Query($args);
 
         
 
 
 
 //Affichage des Evenement
-    echo "<h1>" .category_description(get_category_by_slug('evenement')) . "</h1>";
+    echo "<h1>" .category_description(get_category_by_slug('evenements')) . "</h1>";
 
-    echo "<div id='nouvDivFull'>";
+    echo "<div id='containEve'>";
 
     
         while ($query1->have_posts()){
             $query1->the_post();
             
-                echo "<div id='nouvDiv'>
-                    <section id='nouvTitre'>
+                echo "<div id='eveDiv'>
+                    <section id='eveTitre'>
                          <h2>" . get_the_title() . "</h2>";
                     echo "<p>" . get_the_excerpt() . "</p></section>";
-                    echo "<section='nouvImg'>";
-                     the_post_thumbnail('thumbnail');
-            echo "</section> </div>";
+                    //echo "<section='containImg'>";
+                    // the_post_thumbnail('thumbnail');
+            echo "</div>";
        
         }
         echo "</div>";

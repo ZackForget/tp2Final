@@ -8,11 +8,11 @@ endwhile;
 
 //JAVASCRIPT POUR AFFICHER ON CLICK
 
-echo '<h2>' .category_description(get_category_by_slug('Événement')) . '</h2>';
+echo '<h2>' .category_description(get_category_by_slug('evenements')) . '</h2>';
 
 
 $args3 = array(
-    "category_name" => "evenement",
+    "category_name" => "evenements",
     "posts_per_page" => 1
 );
 

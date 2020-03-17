@@ -380,6 +380,11 @@ h1 {
   text-align: center;
 }
 
+#confDesc h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -534,6 +539,24 @@ main {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#containNouv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#nouvDiv {
+  width: 30%;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------

@@ -17,7 +17,7 @@ while ( have_posts() ) :
 endwhile; // End of the loop.
 
 //Affichage des Événements
-echo '<h2>' .category_description(get_category_by_slug('Événement')) . '</h2>';
+echo '<h2>' .category_description(get_category_by_slug('evenements')) . '</h2>';
 
 
 echo '<div id="grilleevenement">';
