@@ -8,7 +8,7 @@ endwhile;
 
 //JAVASCRIPT POUR AFFICHER ON CLICK
 
-echo '<h2>' .category_description(get_category_by_slug('evenements')) . '</h2>';
+//echo '<h2>' .category_description(get_category_by_slug('evenements')) . '</h2>';
 
 
 $args3 = array(
