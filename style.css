@@ -376,6 +376,10 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+main {
+  font-family: 'Raleway', sans-serif;
+}
+
 h1 {
   text-align: center;
 }
@@ -391,10 +395,6 @@ h1 {
 
 #titreEve {
   padding-top: 20px;
-}
-
-#nouvDesc h2 {
-  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -589,6 +589,10 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 #eveDiv {
@@ -627,67 +631,56 @@ main {
 ## Animations
 --------------------------------------------------------------*/
 #containDiv:nth-child(1) {
+  -webkit-animation: fondudebut 4s;
+          animation: fondudebut 4s;
   background-color: whitesmoke;
 }
 
 #containDiv:nth-child(2) {
+  -webkit-animation: fondudebut 4s;
+          animation: fondudebut 4s;
   background-color: #ebebeb;
 }
 
 #containDiv:nth-child(3) {
+  -webkit-animation: fondudebut 4s;
+          animation: fondudebut 4s;
   background-color: #e1e1e1;
 }
 
-#containDiv:nth-child(4) {
-  background-color: #d7d7d7;
+main {
+  -webkit-animation: fondudebut 3s;
+          animation: fondudebut 3s;
 }
 
-#containDiv:nth-child(5) {
-  background-color: #cdcdcd;
+@-webkit-keyframes fondudebut {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  75% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#containDiv:nth-child(6) {
-  background-color: #c3c3c3;
-}
-
-#containDiv:nth-child(7) {
-  background-color: #b9b9b9;
-}
-
-#containDiv:nth-child(8) {
-  background-color: #afafaf;
-}
-
-#containDiv:nth-child(9) {
-  background-color: #a5a5a5;
-}
-
-#containDiv:nth-child(10) {
-  background-color: #9b9b9b;
-}
-
-#containDiv:nth-child(11) {
-  background-color: #919191;
-}
-
-#containDiv:nth-child(12) {
-  background-color: #878787;
-  color: white;
-}
-
-#containDiv:nth-child(13) {
-  background-color: #7d7d7d;
-  color: white;
-}
-
-#containDiv:nth-child(14) {
-  background-color: #737373;
-  color: white;
-}
-
-#containDiv:nth-child(15) {
-  background-color: dimgray;
-  color: white;
+@keyframes fondudebut {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  75% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*--------------------------------------------------------------

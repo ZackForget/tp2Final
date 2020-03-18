@@ -5,6 +5,9 @@ get_template_part('header');
 ?>
 <div id="primary" class="content-area">
 <main id="main" class="site-main">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+</style>
 		<?php
 
 
@@ -60,7 +63,7 @@ get_template_part('header');
 
         $args = array(
             "category_name" => "evenements",
-            "posts_per_page" => 15,
+            "posts_per_page" => 3,
             "orderby" => "date", 
             "order" => "ASC"
 

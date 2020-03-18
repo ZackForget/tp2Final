@@ -1,15 +1,33 @@
 
 
-@for $i from 1 through 15{
+@for $i from 1 through 3{
     #containDiv:nth-child(#{$i}) {
 
-    background-color:rgba( 255 - ($i * 10), 255 - ($i * 10), 255 - ($i * 10), 1);
+    animation: fondudebut 4s; 
 
-        
-        @if $i > 11 {
-            color: white;
-        }
+    background-color:rgba( 255 - ($i * 10), 255 - ($i * 10), 255 - ($i * 10), 1);
+    
+
         
     }
 
+
 }
+
+    main{
+      animation: fondudebut 3s;
+    }
+
+    @keyframes fondudebut{
+        0%{
+            opacity: 0; transform: translateY(-8px);
+        }       
+
+        75%{
+            transform: translateY(0px);
+        }
+        
+        100%{
+            opacity: 1; 
+        }
+    }
