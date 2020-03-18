@@ -60,7 +60,7 @@ get_template_part('header');
 
         $args = array(
             "category_name" => "evenements",
-            "posts_per_page" => 3,
+            "posts_per_page" => 15,
             "orderby" => "date", 
             "order" => "ASC"
 
@@ -74,7 +74,8 @@ get_template_part('header');
 
     
 
-
+        
+    echo "<div id=containEve>";
     
         while ($query1->have_posts()){
             $query1->the_post();
@@ -88,6 +89,8 @@ get_template_part('header');
                 echo "</div>";
        
         }
+
+        echo "</div>"
 
 
 

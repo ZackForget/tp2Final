@@ -1,0 +1,15 @@
+
+
+@for $i from 1 through 15{
+    #containDiv:nth-child(#{$i}) {
+
+    background-color:rgba( 255 - ($i * 10), 255 - ($i * 10), 255 - ($i * 10), 1);
+
+        
+        @if $i > 11 {
+            color: white;
+        }
+        
+    }
+
+}
