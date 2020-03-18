@@ -43,12 +43,14 @@
 
 			<div id="content" class="site-content">
 			
-			<input type="checkbox" id="burgerChk" class='burgerChk'>
+		<div id='containerBurger'>
 			<div id="burger">
-				<span></span>
-				<span></span>
-				<span></span>
+				<span id='btn1'></span>
+				<span id='btn2'></span>
+				<span id='btn3'></span>
 			</div>
+			
+		</div>
 		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -65,14 +65,17 @@ let contenuNouvelle = document.getElementById('contenuNouv');
 window.addEventListener("load", () => {
 
     let btnBurger = document.getElementById('burger');
-    let btnBurgerChk = document.getElementById('burgerChk');
-    console.log(btnBurgerChk);
+    let btnBurgerChk = document.getElementById('containerBurger');
+    
     btnBurger.addEventListener('click',function(){
          //console.log('a');
         //btnBurgerChk.checked = true;
         //console.log(btnBurgerChk.checked);
 
-    $(this).toggleClass('open');
+    console.log(btnBurgerChk);
+        btnBurgerChk.classList.add('open');
+
+            //$(this).toggleClass('open');
     
     })        
         
