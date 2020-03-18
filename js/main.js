@@ -1,8 +1,10 @@
+//API REST
+
 window.addEventListener("load", () => {
  
  let collectionBtnNouvelle = document.querySelectorAll('button');
 
-    console.log(collectionBtnNouvelle.length);
+    //console.log(collectionBtnNouvelle.length);
 
 
     if (collectionBtnNouvelle){
@@ -12,7 +14,6 @@ window.addEventListener("load", () => {
     }
 }
 });
-
 
 function Ajax(evt) {
     
@@ -55,3 +56,28 @@ let contenuNouvelle = document.getElementById('contenuNouv');
 
     contenuNouvelle.innerHTML = monHtmlString; 
 }
+
+
+
+
+
+//Burger menu
+window.addEventListener("load", () => {
+
+    let btnBurger = document.getElementById('burger');
+    let btnBurgerChk = document.getElementById('burgerChk');
+    console.log(btnBurgerChk);
+    btnBurger.addEventListener('click',function(){
+         //console.log('a');
+        //btnBurgerChk.checked = true;
+        //console.log(btnBurgerChk.checked);
+
+    $(this).toggleClass('open');
+    
+    })        
+        
+        
+   
+
+
+});

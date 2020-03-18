@@ -20,6 +20,8 @@ endwhile; // End of the loop.
 $args2 = array(
   "category_name" => "evenements",
   "posts_per_page" => 16,
+  "orderby" => "date", 
+  "order" => "ASC"
  
 
 );
@@ -44,9 +46,9 @@ echo '<div id="grilleevenement">';
     $gridArea = $jour . '/' . $mois . '/' . ($jour+1) . '/' . ($mois+1) ;
 
 
-    echo "<script>console.log(" . $jour . " );</script>";
-    echo "<script>console.log(" . $mois . " );</script>";
-    echo "<script>console.log(" . $gridArea . " );</script>";
+    // echo "<script>console.log(" . $jour . " );</script>";
+    // echo "<script>console.log(" . $mois . " );</script>";
+    // echo "<script>console.log(" . $gridArea . " );</script>";
 
  echo '<div> <p style="grid-area: '.$gridArea . '">' . 
  get_the_title() . ' <br> ' .get_the_date('j / m / Y')

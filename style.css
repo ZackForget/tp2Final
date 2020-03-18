@@ -412,105 +412,60 @@ h1 {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-  height: 10%;
-}
-
-.main-navigation ul {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.main-navigation ul ul {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 100%;
-  left: -999em;
-  z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  left: 100%;
-}
-
-.main-navigation ul ul a {
-  width: 200px;
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-  color: red;
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-  color: red;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto;
-}
-
-.main-navigation li {
-  float: left;
+#burger {
+  width: 60px;
+  height: 45px;
   position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
 
-.main-navigation a {
+#burger span {
   display: block;
-  text-decoration: none;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
+#burger span:nth-child(1) {
+  top: 0px;
 }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-  .main-navigation ul {
-    display: block;
-  }
+#burger span:nth-child(2) {
+  top: 18px;
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden;
+#burger span:nth-child(3) {
+  top: 36px;
 }
 
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%;
+#burgerChk.open ~ span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
+#burgerChk.open ~ span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#burgerChk.open ~ span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 /*--------------------------------------------------------------
@@ -589,7 +544,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 30px;
+  margin-bottom: 15px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 20px;
@@ -631,33 +587,43 @@ main {
 ## Animations
 --------------------------------------------------------------*/
 #containDiv:nth-child(1) {
-  -webkit-animation: fondudebut 4s;
-          animation: fondudebut 4s;
-  background-color: whitesmoke;
+  -webkit-animation: fondudebut 3s;
+          animation: fondudebut 3s;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(whitesmoke), to(rgba(245, 245, 245, 0)));
+  background-image: linear-gradient(to top, whitesmoke, rgba(245, 245, 245, 0));
 }
 
 #containDiv:nth-child(2) {
-  -webkit-animation: fondudebut 4s;
-          animation: fondudebut 4s;
-  background-color: #ebebeb;
+  -webkit-animation: fondudebut 3s;
+          animation: fondudebut 3s;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebebeb), to(rgba(235, 235, 235, 0)));
+  background-image: linear-gradient(to top, #ebebeb, rgba(235, 235, 235, 0));
 }
 
 #containDiv:nth-child(3) {
-  -webkit-animation: fondudebut 4s;
-          animation: fondudebut 4s;
-  background-color: #e1e1e1;
+  -webkit-animation: fondudebut 3s;
+          animation: fondudebut 3s;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
+  background-image: linear-gradient(to top, #e1e1e1, rgba(225, 225, 225, 0));
+}
+
+#containDiv:nth-child(4) {
+  -webkit-animation: fondudebut 3s;
+          animation: fondudebut 3s;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d7d7d7), to(rgba(215, 215, 215, 0)));
+  background-image: linear-gradient(to top, #d7d7d7, rgba(215, 215, 215, 0));
 }
 
 main {
-  -webkit-animation: fondudebut 3s;
-          animation: fondudebut 3s;
+  -webkit-animation: fondudebut 2.5s;
+          animation: fondudebut 2.5s;
 }
 
 @-webkit-keyframes fondudebut {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   75% {
     -webkit-transform: translateY(0px);
@@ -671,8 +637,8 @@ main {
 @keyframes fondudebut {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   75% {
     -webkit-transform: translateY(0px);
@@ -680,6 +646,206 @@ main {
   }
   100% {
     opacity: 1;
+  }
+}
+
+#grilleevenement div:nth-child(1) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.05556s;
+          animation-delay: 0.05556s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(2) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.11111s;
+          animation-delay: 0.11111s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(3) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.16667s;
+          animation-delay: 0.16667s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(4) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.22222s;
+          animation-delay: 0.22222s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(5) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.27778s;
+          animation-delay: 0.27778s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(6) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.33333s;
+          animation-delay: 0.33333s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(7) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.38889s;
+          animation-delay: 0.38889s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(8) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.44444s;
+          animation-delay: 0.44444s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(9) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(10) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.55556s;
+          animation-delay: 0.55556s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(11) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.61111s;
+          animation-delay: 0.61111s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(12) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.66667s;
+          animation-delay: 0.66667s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(13) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.72222s;
+          animation-delay: 0.72222s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(14) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.77778s;
+          animation-delay: 0.77778s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(15) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.83333s;
+          animation-delay: 0.83333s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(16) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.88889s;
+          animation-delay: 0.88889s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(17) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 0.94444s;
+          animation-delay: 0.94444s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(18) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+#grilleevenement div:nth-child(19) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 1.05556s;
+          animation-delay: 1.05556s;
+  background-color: whitesmoke;
+}
+
+#grilleevenement div:nth-child(20) {
+  -webkit-animation: backgroundEve 0.65s ease;
+          animation: backgroundEve 0.65s ease;
+  -webkit-animation-delay: 1.11111s;
+          animation-delay: 1.11111s;
+  background-color: whitesmoke;
+  background-color: #e1e1e1;
+}
+
+@-webkit-keyframes backgroundEve {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes backgroundEve {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

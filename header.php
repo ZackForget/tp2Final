@@ -25,19 +25,32 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<!-- <div class="site-branding"> -->
 
-		</div><!-- .site-branding -->
+		<!-- </div>.site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscores' ); ?></button>
-			<?php
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscores' ); ?></button> -->
+			<!-- <?php
 			//wp_nav_menu( array(
 			//	'theme_location' => 'menu-1',
 			//	'menu_id'        => 'primary-menu',
 			//) );
-			?>
+			
+			
+				?> -->
+
+
+			<div id="content" class="site-content">
+			
+			<input type="checkbox" id="burgerChk" class='burgerChk'>
+			<div id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+
