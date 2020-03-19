@@ -70,20 +70,16 @@ window.addEventListener("load", () => {
     btnBurger.addEventListener('click',function(){
          //console.log('a');
         //btnBurgerChk.checked = true;
-console.log(btnBurgerChk.classList);
+        
         if(btnBurgerChk.classList.contains('open')){
             
             btnBurgerChk.classList.remove('open');
-        }else{        
-        btnBurgerChk.classList.add('open');
+        }
+        
+        else{        
+            btnBurgerChk.classList.add('open');
         }
 
-//IF Open, enleve open
-
-
-
-            //$(this).toggleClass('open');
-    
     })        
         
         

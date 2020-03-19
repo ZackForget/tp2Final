@@ -1,19 +1,14 @@
-// #burgerChk{
-// 	display: none;
-// }
+
+#containerBurger{
+	width: 30px;
+}
 
 #burger {
-	width: 60px;
-	height: 45px;
+	width: 30px;
+	height: 35px;
 	position: relative;
 	margin: 50px auto;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
   }
@@ -23,19 +18,13 @@
   #burger span {
 	display: block;
 	position: absolute;
-	height: 9px;
+	height: 5px;
 	width: 100%;
-	background: #d3531a;
+	background: #404040;
 	border-radius: 9px;
 	opacity: 1;
 	left: 0;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
-	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
   }
 
@@ -46,11 +35,11 @@
   }
   
   #btn2 {
-	top: 18px;
+	top: 8px;
   }
   
   #btn3  {
-	top: 36px;
+	top: 16px;
   }
 
 // .open{
@@ -60,10 +49,8 @@
   
   
    .open #btn1 {
-	 top: 18px;
- 	-webkit-transform: rotate(135deg);
- 	-moz-transform: rotate(135deg);
- 	-o-transform: rotate(135deg);
+	 top: 8px;
+
  	transform: rotate(135deg);
    }
   
@@ -73,10 +60,8 @@
    }
 
    .open #btn3 {
- 	top: 18px;
- 	-webkit-transform: rotate(-135deg);
- 	-moz-transform: rotate(-135deg);
- 	-o-transform: rotate(-135deg);
+ 	top: 8px;
+
  	transform: rotate(-135deg);
    }
   
