@@ -82,7 +82,7 @@
 	background-color: #404040;
 	overflow-x: hidden; 
 	padding-top: 60px; 
-	transition: 0.5s; 
+	transition: 0.5s ease; 
    }
 
    #divNav a{
@@ -90,9 +90,9 @@
 	text-decoration: none;
 	text-align: center;
 	font-size: 25px;
-	color: #818181;
+	color: #acacac;
 	display: block;
-	transition: 0.3s;
+	transition: 0.3s ease;
    }
 
    #divNav a:hover{
