@@ -414,6 +414,8 @@ h1 {
 --------------------------------------------------------------*/
 #containerBurger {
   width: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 #burger {
@@ -470,6 +472,35 @@ h1 {
   top: 8px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+}
+
+#divNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #404040;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#divNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#divNav a:hover {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -619,6 +650,11 @@ main {
 }
 
 main {
+  -webkit-animation: fondudebut 2.5s;
+          animation: fondudebut 2.5s;
+}
+
+#burger {
   -webkit-animation: fondudebut 2.5s;
           animation: fondudebut 2.5s;
 }

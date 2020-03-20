@@ -29,7 +29,7 @@
 
 		<!-- </div>.site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscores' ); ?></button> -->
 			<!-- <?php
 			//wp_nav_menu( array(
@@ -49,8 +49,28 @@
 				<span id='btn2'></span>
 				<span id='btn3'></span>
 			</div>
-			
 		</div>
+	
+	
+	<nav id="site-navigation" class="main-navigation">
+	
+		<div id='divNav'>
+			
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+			<a href='#'>Lorem ipsum</a>
+		</div>
+
+
+			
+		
 		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

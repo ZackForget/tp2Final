@@ -10,12 +10,16 @@
 }
 
      main{
-       animation: fondudebut 2.5s;
-    
-    
+       animation: fondudebut 2.5s;   
     }
+
+    #burger{
+        animation: fondudebut 2.5s;   
+    }
+
+
     
-     @keyframes fondudebut{
+    @keyframes fondudebut{
          0%{
              opacity: 0; transform: translateY(-5px);
          }       

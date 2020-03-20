@@ -74,10 +74,22 @@ window.addEventListener("load", () => {
         if(btnBurgerChk.classList.contains('open')){
             
             btnBurgerChk.classList.remove('open');
+
+            document.getElementById('divNav').style.width = "0%";
+
+            document.getElementById('btn1').style.background = "#404040";
+            document.getElementById('btn2').style.background = "#404040";
+            document.getElementById('btn3').style.background = "#404040";
         }
         
         else{        
             btnBurgerChk.classList.add('open');
+
+            document.getElementById('divNav').style.width = "100%";
+
+            document.getElementById('btn1').style.background = "white";
+            document.getElementById('btn2').style.background = "white";
+            document.getElementById('btn3').style.background = "white";
         }
 
     })        
