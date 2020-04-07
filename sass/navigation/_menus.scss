@@ -22,7 +22,7 @@
 	position: absolute;
 	height: 5px;
 	width: 100%;
-	background: #404040;
+	background: $grisFonce;
 	border-radius: 9px;
 	opacity: 1;
 	left: 0;
@@ -79,7 +79,7 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #404040;
+	background-color: $grisFonce;
 	overflow-x: hidden; 
 	padding-top: 60px; 
 	transition: 0.5s ease; 
@@ -90,7 +90,7 @@
 	text-decoration: none;
 	text-align: center;
 	font-size: 25px;
-	color: #acacac;
+	color: $grisTexte;
 	display: block;
 	transition: 0.3s ease;
    }

@@ -1,19 +1,35 @@
 <?php
+/**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package underscore
+ */
+
 
 while ( have_posts() ) :
     the_post();
 
 endwhile;
 
-
 //JAVASCRIPT POUR AFFICHER ON CLICK
+
+//Je n'ai pas réussi a faire marcher l'API Rest, donc j'ai juste mis la description d'un événement en bas de la grille
+//Mon objectif était d'afficher la description de l'événement cliqué
 
 //echo '<h2>' .category_description(get_category_by_slug('evenements')) . '</h2>';
 
-
 $args3 = array(
     "category_name" => "evenements",
-    "posts_per_page" => 1
+    "posts_per_page" => 1,
+  "orderby" => "date", 
+  "order" => "ASC"
 );
 
 $query5 = new WP_Query($args3);
