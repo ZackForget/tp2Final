@@ -62,3 +62,10 @@ echo '</div>';
 get_template_part('description-evenement');
 
 ?>
+
+</main>
+</div>
+
+<?php
+
+get_footer();

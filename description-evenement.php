@@ -29,7 +29,7 @@ $args3 = array(
     "category_name" => "evenements",
     "posts_per_page" => 1,
   "orderby" => "date", 
-  "order" => "ASC"
+  "order" => "DESC"
 );
 
 $query5 = new WP_Query($args3);

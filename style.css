@@ -821,4 +821,32 @@ main {
 /*--------------------------------------------------------------
 ## footer
 --------------------------------------------------------------*/
+#footer {
+  background-color: #404040;
+}
+
+#textFooter {
+  color: white;
+  font-size: 23px;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+footer {
+  height: 75px;
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#footer p {
+  margin: 0 0 0 0;
+}
 /*# sourceMappingURL=style.css.map */

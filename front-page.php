@@ -107,4 +107,4 @@ get_template_part('header');
 
 <?php
 //get_sidebar();
-//get_footer();
+get_footer();

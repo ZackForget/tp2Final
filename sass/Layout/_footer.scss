@@ -1,0 +1,25 @@
+#footer{
+    background-color: $grisFonce;
+}
+
+#textFooter{
+    color: $grisTexteHover;
+    font-size: 23px;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+footer{
+
+    height: 75px;
+
+    margin-top: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer p{
+    margin: 0 0 0 0;
+}
